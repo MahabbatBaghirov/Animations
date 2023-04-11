@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.divs {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 350px auto;
+} 
+.divs .point1 {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    animation-name: movement;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.divs .point2 {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    animation-name: movement;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.divs .point3 {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    animation-name: movement;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes movement {
+    0%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
